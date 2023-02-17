@@ -1,74 +1,31 @@
-<!DOCTYPE html>
+{% load static %}
 <html>
 <head>
 	<title>Moja strona oceaniczna</title>
-	<style>
-		body {
-			background-color: #085078;
-			color: #fff;
-			font-family: "Helvetica Neue", sans-serif;
-			font-size: 16px;
-			line-height: 1.6;
-			margin: 0;
-			padding: 0;
-		}
-		header {
-			background-color: #07689f;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-		}
-		h1 {
-			font-size: 2.5em;
-			margin: 0;
-		}
-		nav {
-			background-color: #0b4f6c;
-			display: flex;
-			justify-content: center;
-			padding: 10px;
-		}
-		nav a {
-			color: #fff;
-			font-size: 1.2em;
-			margin: 0 20px;
-			text-decoration: none;
-			text-transform: uppercase;
-		}
-		nav a:hover {
-			text-decoration: underline;
-		}
-		main {
-			margin: 20px;
-		}
-		h2 {
-			font-size: 2em;
-			margin: 0 0 20px;
-		}
-		p {
-			margin: 0 0 20px;
-		}
-		footer {
-			background-color: #0b4f6c;
-			color: #fff;
-			padding: 20px;
-			text-align: center;
-		}
-	</style>
+	 <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
 	<header>
-		<h1>Moja strona oceaniczna</h1>
+		<h1>PUZZLECHESSFENDB</h1>
 	</header>
 	<nav>
 		<a href="#">Strona główna</a>
-		<a href="#">O nas</a>
-		<a href="#">Galeria</a>
-		<a href="#">Kontakt</a>
+		<a href="#">Dzienne zadania</a>
+		<a href="#">Instrukcjia obsługi</a>
+		<a href="#">O projektcie</a>
 	</nav>
 	<main>
-		<h2>Witaj na naszej stronie!</h2>
+		<h2>PUZZLECHESSFEN!</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper neque nec purus laoreet,</p>
+		<svg viewBox="0 0 400 400">
+        {{ board_svg|safe }}
+    </svg>
+		<div>
+  <label for="input-chess-fen">FEN:</label>
+  <input type="text" id="input-chess-fen" name="chess-fen" placeholder="Wpisz FEN" required>
+			<button id="send-fen-btn" class="btn">Wyślij FEN</button>
+
+</div>
 	</main>
 </body>
 </html>
