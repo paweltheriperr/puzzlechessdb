@@ -1,7 +1,7 @@
 {% load static %}
 <html>
 <head>
-	<title>Moja strona oceaniczna</title>
+	<title>PUZZLECHESSFENDB</title>
 	 <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
@@ -22,9 +22,14 @@
         {{ board_svg|safe }}
     </svg>
 		<div>
+
+  <form method="POST">
+  {% csrf_token %}
   <label for="input-chess-fen">FEN:</label>
-  <input type="text" id="input-chess-fen" name="chess-fen" placeholder="Wpisz FEN" required>
-			<button id="send-fen-btn" class="btn">Wyślij FEN</button>
+  <input type="text" id="input-chess-fen" name="chess_fen" placeholder="Wpisz FEN" value="" required>
+  <button type="submit" id="send-fen-btn" class="btn">Wyślij FEN</button>
+</form>
+
 </div>
 </div>
 	</main>

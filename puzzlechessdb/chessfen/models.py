@@ -1,8 +1,8 @@
 from django.db import models
 
-# Klasa FEN dziedziczy po klasie Model z modułu models.
-class FEN(models.Model):
-    # Pole name typu CharField o maksymalnej długości 100 znaków.
-    name = models.CharField(max_length=100)
-    # Pole fen typu CharField o maksymalnej długości 100 znaków.
+class ChessPosition(models.Model):
     fen = models.CharField(max_length=100)
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.fen

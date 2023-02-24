@@ -2,6 +2,7 @@ from django.http import HttpResponse
 from django.shortcuts import render
 import chess
 import svgwrite
+
 def add_pieces_to_board(dwg, board, square_size):
     # Twórz słownik z nazwami plików obrazków figur szachowych
     piece_images = {
@@ -20,10 +21,15 @@ def add_pieces_to_board(dwg, board, square_size):
                 piece = piece_images[board.piece_at(square).symbol()]
                 # Dodaj obrazek figury do planszy SVG
                 dwg.add(dwg.image(piece, insert=(x * square_size, y * square_size), size=(square_size, square_size)))
+    pass
 
 def index(request):
-    # Twórz planszę szachową
-    board = chess.Board("1K3r2/8/P1B4b/1N6/2N5/PP1Np3/kBppN3/5qR1 w - - 0 1")
+    if request.method == 'POST':
+        fen = request.POST.get('chess-fen')
+        board = chess.Board(fen)
+    else:
+        # Twórz planszę szachową
+        board = chess.Board("1K3r2/8/P1B4b/1N6/2N5/PP1Np3/kBppN3/5qR1 w - - 0 1")
     # Twórz obiekt svg dla planszy
     dwg = svgwrite.Drawing(size=('100%', '100%'))
     # Ustaw rozmiar kwadratu
