@@ -52,3 +52,5 @@ def index(request):
     return render(request, 'chessfen/index.html', {'board_svg': svg_code})
 def inst(request):
     return render(request, 'chessfen/inst.html')
+def dcp(request):
+    return render(request, 'chessfen/dcp.html')

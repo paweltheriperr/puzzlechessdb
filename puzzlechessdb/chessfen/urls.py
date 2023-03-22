@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('', views.index, name='index'),
-    path('inst/', views.inst_view, name='inst'),
+    path('index/', views.index, name='index'),
+    path('inst/', views.inst, name='inst'),
+    path('dcp/', views.dcp, name='dcp'),
 ]

@@ -7,30 +7,24 @@
 </head>
 <body>
 	<header>
-		<h1>PUZZLE CHESS FEN DB</h1>
+		<h1>Dzienne zadania szachowe</h1>
 	</header>
 	<nav>
 		<a href="{% url 'index' %}">Strona główna</a>
-		<a href="{% url 'dcp' %}">Dzienne zadania</a>
+		<a href="{% url 'index' %}">Dzienne zadania</a>
 		<a href="{% url 'inst' %}">Instrukcjia obsługi</a>
 		<a href="https://github.com/paweltheriperr/puzzlechessdb">O projektcie</a>
 	</nav>
 	<main>
 		<div id="container">
-		<h2>PUZZLE CHESS FEN !</h2>
+		<h2>Dzienne zadania szachowe</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper neque nec purus laoreet,</p>
 		<svg viewBox="0 0 400 400">
         {{ board_svg|safe }}
     </svg>
 		<div>
 
-  <form method="POST">
-  {% csrf_token %}
-  <label for="input-chess-fen">FEN:</label>
-  <input type="text" id="input-chess-fen" name="chess-fen" placeholder="Wpisz FEN" required>
-			<button id="send-fen-btn" class="btn">Wyślij FEN</button>
 
-</form>
 
 </div>
 </div>
