@@ -1,12 +1,13 @@
 {% load static %}
 <html>
 <head>
+
 	<title>PUZZLECHESSFENDB</title>
 	 <link rel="stylesheet" href="{% static 'style.css' %}">
 </head>
 <body>
 	<header>
-		<h1>PUZZLECHESSFENDB</h1>
+		<h1>PUZZLE CHESS FEN DB</h1>
 	</header>
 	<nav>
 		<a href="#">Strona główna</a>
@@ -16,7 +17,7 @@
 	</nav>
 	<main>
 		<div id="container">
-		<h2>PUZZLECHESSFEN!</h2>
+		<h2>PUZZLE CHESS FEN !</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper neque nec purus laoreet,</p>
 		<svg viewBox="0 0 400 400">
         {{ board_svg|safe }}
@@ -26,8 +27,9 @@
   <form method="POST">
   {% csrf_token %}
   <label for="input-chess-fen">FEN:</label>
-  <input type="text" id="input-chess-fen" name="chess_fen" placeholder="Wpisz FEN" value="" required>
-  <button type="submit" id="send-fen-btn" class="btn">Wyślij FEN</button>
+  <input type="text" id="input-chess-fen" name="chess-fen" placeholder="Wpisz FEN" required>
+			<button id="send-fen-btn" class="btn">Wyślij FEN</button>
+
 </form>
 
 </div>
@@ -35,3 +37,4 @@
 	</main>
 </body>
 </html>
+
