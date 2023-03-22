@@ -106,3 +106,34 @@ input[type="text"] {
 .btn:hover {
   background-color: #FF0000;
 }
+li, ol, ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+ul {
+margin: 10px;
+}
+
+li {
+margin-bottom: 5px;
+}
+
+ol {
+margin: 10px;
+counter-reset: item;
+}
+
+ol li:before {
+content: counter(item);
+counter-increment: item;
+font-weight: bold;
+margin-right: 5px;
+}
+
+ul li:before {
+content: "\2022";
+margin-right: 5px;
+font-weight: bold;
+}

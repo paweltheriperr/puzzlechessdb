@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+<head>
+
+	<title>Instrukcja tworzenia FEN szachowego</title>
+	 <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+	<header>
+		<h1>Instrukcja tworzenia FEN szachowego</h1>
+	</header>
+	<nav>
+		<a href="#">Strona główna</a>
+		<a href="#">Dzienne zadania</a>
+		<a href="inst">Instrukcjia obsługi</a>
+		<a href="https://github.com/paweltheriperr/puzzlechessdb">O projektcie</a>
+	</nav>
+		<main>
+		<ol>
+			<li>Zaczynamy od lewej strony planszy, tj. od pozycji "a8" (czarna wieża) do "h8" (czarna wieża), a następnie kontynuujemy na kolejnym rzędzie od "a7" (czarny pion) do "h7" (czarny pion).</li>
+			<li>Każdy rząd zapisujemy oddzielnie, a między kolejnymi rządami umieszczamy znak "/". Na przykład: "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR".</li>
+			<li>Każdy znak w FEN oznacza figurę lub pustą przestrzeń na planszy. Oto co oznaczają poszczególne litery:
+				<ul>
+					<li>p - czarny pion</li>
+					<li>r - czarna wieża</li>
+					<li>n - czarny koń</li>
+					<li>b - czarny goniec</li>
+					<li>q - czarna królowa</li>
+					<li>k - czarny król</li>
+					<li>P - biały pion</li>
+					<li>R - biała wieża</li>
+					<li>N - biały koń</li>
+					<li>B - biały goniec</li>
+					<li>Q - biała królowa</li>
+					<li>K - biały król</li>
+				</ul>
+			</li>
+			<li>Liczbę pustych pól między figurami na jednym rzędzie oznaczamy liczbą od 1 do 8, np. "3p4" oznacza trzy puste pola, potem czarny pion i jeszcze cztery puste pola.</li>
+			<li>Jeśli ruch białych rozpoczyna się od danego ruchu, dodajemy literę "w" na końcu FEN. Jeśli ruch czarnych rozpoczyna się od danego ruchu, dodajemy literę "b".</li>
+			<li>Oznaczamy możliwość bicia en passant, jeśli jest możliwa. W przeciwnym razie piszemy "-".</li>
+			<li>Oznaczamy liczbę wykonanych półruchów, czyli liczba pól przesuniętych bez bicia pionem lub ruchu króla. Jeśli nie było jeszcze wykonanych półruchów, piszemy 0.</li>
+			<li>Oznaczamy numer aktualnej tury, poczynając od 1.</li>
+		</ol>
+	</main>
+</body>
+</html>
+

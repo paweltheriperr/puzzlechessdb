@@ -50,3 +50,5 @@ def index(request):
     svg_code = dwg.tostring()
     # Wyświetl planszę SVG i FEN
     return render(request, 'chessfen/index.html', {'board_svg': svg_code})
+def inst(request):
+    return render(request, 'chessfen/inst.html')
