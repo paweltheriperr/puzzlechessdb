@@ -17,7 +17,11 @@
 </p>
 
 ## About
-Puzzle Chess DB is a fan project of a chess app that will make learning chess easier. <span onmouseover="this.style.textShadow='0 0 8px #fff, 0 0 8px #fff, 0 0 8px #fff, 0 0 8px #31b8c5, 0 0 8px #31b8c5, 0 0 8px #31b8c5'" onmouseout="this.style.textShadow='none'" style="cursor: pointer;">Find us on GitHub!</span>
+<div style="border: 2px solid #31b8c5; padding: 10px;">
+  <p align="center">
+    Puzzle Chess DB is a fan project of a chess app that will make learning chess easier.
+  </p>
+</div>
 
 ## Author
 
