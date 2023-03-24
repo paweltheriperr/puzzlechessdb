@@ -17,22 +17,7 @@
 </p>
 
 ## About
-<table border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td style="padding: 10px; background-color: #000; border: 2px solid #31b8c5;">
-      <p style="color: #fff; font-size: 20px;">Puzzle Chess DB is a fan project of a chess app that will make learning chess easier.</p>
-    </td>
-  </tr>
-  <tr>
-    <td style="padding: 10px; background-color: #000; border: 2px solid #31b8c5;">
-      <p align="center">
-        <span onmouseover="this.style.textShadow='0 0 8px #fff, 0 0 8px #fff, 0 0 8px #fff, 0 0 8px #31b8c5, 0 0 8px #31b8c5, 0 0 8px #31b8c5'" onmouseout="this.style.textShadow='none'" style="cursor: pointer; color: #31b8c5; font-size: 16px;">
-         
-        </span>
-      </p>
-    </td>
-  </tr>
-</table>
+Puzzle Chess DB is a fan project of a chess app that will make learning chess easier. <span onmouseover="this.style.textShadow='0 0 8px #fff, 0 0 8px #fff, 0 0 8px #fff, 0 0 8px #31b8c5, 0 0 8px #31b8c5, 0 0 8px #31b8c5'" onmouseout="this.style.textShadow='none'" style="cursor: pointer;">Find us on GitHub!</span>
 
 ## Author
 
