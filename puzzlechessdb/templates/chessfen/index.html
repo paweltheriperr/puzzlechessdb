@@ -34,6 +34,14 @@
 
 </div>
 </div>
+		{% if success_message %}
+  <p>{{ success_message }}</p>
+{% endif %}
+
+{% if error_message %}
+  <p>{{ error_message }}</p>
+{% endif %}
+
 	</main>
 </body>
 </html>
