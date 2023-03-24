@@ -1,3 +1,4 @@
 # puzzlechessdb
 fan project of a chess app that will make learning chess easier.
-![Puzzle Chess DB](https://github.com/paweltheriperr/puzzlechessdb/issues/1#issue-1640146755)
+![pcdb](https://user-images.githubusercontent.com/113934919/227656379-90a1aa87-f607-4975-a824-ab6515ae73de.png)
+
