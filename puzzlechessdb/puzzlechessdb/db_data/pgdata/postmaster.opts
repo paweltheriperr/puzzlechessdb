@@ -1,0 +1,1 @@
+/usr/lib/postgresql/15/bin/postgres "-c" "wal_level=archive" "-c" "archive_mode=on" "-c" "archive_command=cp %p /backups/%f" "-c" "max_wal_senders=3" "-c" "max_wal_size=1GB"
